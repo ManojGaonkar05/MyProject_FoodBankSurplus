@@ -13,5 +13,5 @@
 - [ ] The generated code files, or the link to your code repository.
 - [ ] 2 or 3 lines on what you changed and why.
 
-Repository link: https://github.com/ManojGaonkar05/foodbank-code<img width="902" height="1061" 
+Repository link: https://github.com/ManojGaonkar05/foodbank-code 
 
