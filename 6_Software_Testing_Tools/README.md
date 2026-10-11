@@ -1,17 +1,22 @@
-# Folder 6 – Software testing tools: bug fix and retest
+# Folder 6 – Software Testing Tools: Bug Fix and Retest
 
-Your faculty shares a game application repository with 4 test cases and a README that explains the testing process.
+**Application:** Word Scramble game (Pygame), assigned repo `SETAPESU26/62_scramble`
+**AI tool used:** GitHub Copilot (VS Code)
 
-**Steps:**
-1. Clone or fork the shared repository.
-2. Read its README: what the game does and how to run the tests.
-3. Run the 4 test cases and note which fail.
-4. Use an AI coding tool (Copilot or similar) to find and fix the bug.
-5. Run all 4 tests again and confirm they pass.
-6. Push the fixed code to your own GitHub repository.
+## Evidence
+- Before (bug visible): https://github.com/ManojGaonkar05/62_scramble/blob/main/Lab-4/Before.mp4
+- After (bug fixed, features working): https://github.com/ManojGaonkar05/62_scramble/blob/main/Lab-4/After.mp4
+- Chat history with Copilot: https://github.com/ManojGaonkar05/62_scramble/tree/main/Lab-4
 
-**Save here:**
-- [ ] Screenshot of the failing test run (before).
-- [ ] Screenshot of the passing test run (after).
-- [ ] Short note: the bug, the cause and the fix.
-- [ ] Link to your fixed repository: _paste here_
+## The bug, the cause and the fix
+- **Bug:** Typing the correct unscrambled word was rejected, and typing the scrambled letters was accepted as correct.
+- **Cause:** The guess was compared against the scrambled display text instead of the actual secret word.
+- **Fix:** The guess validation now compares the player's input with the secret target word.
+
+## Features added with AI assistance
+- Progressive hint system with a score penalty
+- Countdown timer bar that reveals the word and moves to the next round on timeout
+- Clickable letter tiles that can be rearranged
+
+## Link to my fixed repository
+https://github.com/ManojGaonkar05/62_scramble
