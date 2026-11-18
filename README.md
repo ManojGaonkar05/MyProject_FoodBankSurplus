@@ -3,19 +3,20 @@
 **Student:** Manoj Shrikant Gaonkar | **SRN:** PES1UG25CS827 | **Section:** H | **Faculty:** Ambika K  
 **Course:** Software Engineering, PES University, Dept. of CSE | **Problem Statement:** #62 – Sustainability & Green Tech
 
-## Problem Statement
 A food rescue platform where restaurants and grocery stores post surplus edible food batches, and verified local shelters reserve pickup windows before food expiry.
 
-**Actors:** Donor Partner, Shelter Coordinator (official). Network Administrator and Expiry Timer System are added in the Lab 1 diagram.
+## Repository structure
 
-## Repository Structure
-| Folder | Contents | Status |
-|---|---|---|
-| [1_RE](1_RE/) | Requirements table (5 FR + 2 NFR), RTM, UML use-case diagram, use-case flow specification | Done |
-| [2_Architectural_Diagram](2_Architectural_Diagram/) | Layered architecture diagram | Done |
-| [3_Screenshots_GitHub_Jira](3_Screenshots_GitHub_Jira/) | Lab 2 Kanban, Scrum, Bug Tracking PDFs + GitHub/Jira screenshots | Done |
-| [4_SRS_and_WBS](4_SRS_and_WBS/) | SRS and Work Breakdown Structure | Done |
-| [5_GitHub_Copilot_Code](5_GitHub_Copilot_Code/) | Copilot-generated code screenshots / repo link | Done|
-| [6_Software_Testing_Tools](6_Software_Testing_Tools/) | Bug fix and retest of the shared game application | Done |
+Coursework is organized by lab number. Labs 1–7 are included; Lab 7 extends the reference repository's six-lab structure.
 
-![Architecture](2_Architectural_Diagram/Architecture_Diagram.png)
+| Folder | Contents |
+|---|---|
+| [LAB_1](LAB_1/) | Requirements engineering, use cases, SRS and WBS |
+| [LAB_2](LAB_2/) | GitHub/Jira project setup, Kanban, Scrum and bug tracking |
+| [LAB_3](LAB_3/) | System architecture diagram |
+| [LAB_4](LAB_4/) | GitHub Copilot work, software testing-tools bug-fix evidence, and related project source versions |
+| [LAB_5](LAB_5/) | Static code analysis: Pylint, Bandit and Flake8 |
+| [LAB_6](LAB_6/) | Code and branch coverage for the car-rental module |
+| [LAB_7](LAB_7/) | Hypothesis-based fuzz testing |
+
+![Architecture](LAB_3/Architecture/Architecture_Diagram.png)
