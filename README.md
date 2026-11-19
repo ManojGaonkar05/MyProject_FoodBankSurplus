@@ -16,7 +16,7 @@ Coursework is organized by lab number. Labs 1–7 are included; Lab 7 extends th
 | [LAB_3](LAB_3/) | System architecture diagram |
 | [LAB_4](LAB_4/) | GitHub Copilot work, software testing-tools bug-fix evidence, and related project source versions |
 | [LAB_5](LAB_5/) | Static code analysis: Pylint, Bandit and Flake8 |
-| [LAB_6](LAB_6/) | Code and branch coverage for the car-rental module |
-| [LAB_7](LAB_7/) | Hypothesis-based fuzz testing |
+| [LAB 6](LAB%206/) | Food Bank surplus workflow and pytest cases for code and branch coverage |
+| [LAB 7](LAB%207/) | Food donation input processor and Hypothesis-based property tests |
 
 ![Architecture](LAB_3/Architecture/Architecture_Diagram.png)
