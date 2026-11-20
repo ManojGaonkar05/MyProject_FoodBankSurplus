@@ -1,22 +1,40 @@
 # Lab 6 — Code and Branch Coverage
 
-This lab applies code and branch testing to a Food Bank Surplus Redistribution Platform workflow (problem statement #62). The workflow aggregates active, eligible donation batches, prioritizes food near expiry, flags invalid batches for review, and monitors cold-chain readings during pickup.
+This lab measures line/code coverage and decision-branch coverage for the Food Bank Surplus workflow (problem statement #62).
 
-## Files
+## Application under test
 
-| File | Purpose |
-|---|---|
-| `food_bank_workflow.py` | Donation summary and cold-chain workflow under test |
-| `test_food_bank_workflow.py` | Branch-focused pytest cases |
-| `requirements.txt` | Test and coverage dependencies |
-| `screenshots/` | Code and branch coverage result images |
+- `food_bank_workflow.py` — summarizes eligible surplus batches and checks cold-chain readings.
 
-Run from the repository root after installing `LAB 6/requirements.txt`:
+## Separate required test files
+
+- `CodeCoverageTest_food_bank_workflow.py` — code-coverage test cases.
+- `BranchCoverageTest_food_bank_workflow.py` — explicit decision-branch test cases.
+- `test_food_bank_workflow.py` — original combined regression test suite.
+- `requirements.txt` — pytest and coverage dependencies.
+
+## Run the code-coverage test
+
+From the repository root:
 
 ```powershell
-python -m pytest --cov=food_bank_workflow --cov-branch --cov-report=term-missing "LAB 6"
+python -m coverage erase
+python -m coverage run --branch -m pytest -q "LAB 6/CodeCoverageTest_food_bank_workflow.py"
+python -m coverage report -m "LAB 6/food_bank_workflow.py"
 ```
 
-The tests cover active/inactive donations, expiry and minimum-quantity checks, each workflow status, invalid arguments, and empty/safe/unsafe temperature readings.
+## Run the branch-coverage test
 
-Latest run: **8 passed**, **100% statement coverage**, and **26/26 branches covered**. See `screenshots/code_coverage.png` and `screenshots/branch_coverage.png`.
+```powershell
+python -m coverage erase
+python -m coverage run --branch -m pytest -q "LAB 6/BranchCoverageTest_food_bank_workflow.py"
+python -m coverage report -m "LAB 6/food_bank_workflow.py"
+```
+
+## Verification performed
+
+Both dedicated test files were run against the current application code in a Python environment. The code-coverage test passed (1 test) and the branch-coverage test passed (12 parameterized test cases). Each run reported **100% statement coverage (39/39)** and **100% branch coverage (26/26)** for `food_bank_workflow.py`.
+
+## Submission evidence still to capture
+
+The lab handout specifically asks for terminal-output screenshots after achieving at least 90% code coverage and at least 90% branch coverage. Capture the output from each command above on your own machine and save the images in `screenshots/`. Do not use the same image for both deliverables. The screenshots already in this repository are not a substitute for both separate result screenshots.
