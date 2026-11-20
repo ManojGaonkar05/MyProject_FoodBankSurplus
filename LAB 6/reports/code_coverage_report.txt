@@ -1,0 +1,13 @@
+Lab 6 — Code Coverage Test
+Test file: CodeCoverageTest_food_bank_workflow.py
+Command: python -m coverage run --branch -m pytest -q CodeCoverageTest_food_bank_workflow.py
+Result: 1 passed
+Application: food_bank_workflow.py
+Statements: 39 / 39
+Statement coverage: 100%
+Branches: 26 / 26
+Branch coverage: 100%
+Missing lines: 0
+Missing branches: 0
+
+Note: This is a text record of the verification run, not the terminal screenshot required by the lab handout.
